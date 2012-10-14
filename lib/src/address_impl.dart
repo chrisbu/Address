@@ -27,4 +27,14 @@ class _Address implements Address {
   
   toString() => "Address of $fullname"; 
   
+  _Address() {}
+  
+  _Address.fromJson(String json) {
+    var map = JSON.parse(json);
+    this.surname = map["surname"];
+    this.forename = map["forename"];
+    this.address1 = map["address1"];
+    this.address2 = map["address2"];
+  }
+  
 }

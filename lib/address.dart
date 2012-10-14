@@ -18,11 +18,17 @@ abstract class Address {
   /// Returns a representation of the address object
   String toString(); 
   
+  /// Returns a representation of the address object as JSON
   String toJson();
   
   /// Redirecting constructor to the default [Address] implementation
   factory Address() {
     return new _Address(); 
+  }
+  
+  /// Redirecting constructor to the [fromJson] constructor
+  factory Address.fromJson(String json) {
+    return new _Address.fromJson(json);  
   }
   
 }

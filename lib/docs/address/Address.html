@@ -47,11 +47,19 @@ abstract class Address {
   String get fullname;
 
   /// Returns a representation of the address object
-  String toString() =&gt; "Address for $fullname"; 
+  String toString(); 
+  
+  /// Returns a representation of the address object as JSON
+  String toJson();
   
   /// Redirecting constructor to the default [Address] implementation
   factory Address() {
     return new _Address(); 
+  }
+  
+  /// Redirecting constructor to the [fromJson] constructor
+  factory Address.fromJson(String json) {
+    return new _Address.fromJson(json);  
   }
   
 }
@@ -68,6 +76,19 @@ factory <strong>Address</strong>() <a class="anchor-link" href="#Address"
 <pre class="source">
 factory Address() {
   return new _Address(); 
+}
+</pre>
+</div>
+</div>
+<div class="method"><h4 id="Address.fromJson">
+<button class="show-code">Code</button>
+factory <strong>Address.fromJson</strong>(<a href="http://api.dartlang.org/dart_core/String.html">String</a> json) <a class="anchor-link" href="#Address.fromJson"
+              title="Permalink to Address.Address.fromJson">#</a></h4>
+<div class="doc">
+<p>Redirecting constructor to the <code>fromJson</code> constructor</p>
+<pre class="source">
+factory Address.fromJson(String json) {
+  return new _Address.fromJson(json);  
 }
 </pre>
 </div>
@@ -184,6 +205,19 @@ factory Address() {
 </pre>
 </div>
 </div>
+<div class="method"><h4 id="Address.fromJson">
+<button class="show-code">Code</button>
+factory <strong>Address.fromJson</strong>(<a href="http://api.dartlang.org/dart_core/String.html">String</a> json) <a class="anchor-link" href="#Address.fromJson"
+              title="Permalink to Address.Address.fromJson">#</a></h4>
+<div class="doc">
+<p>Redirecting constructor to the <code>fromJson</code> constructor</p>
+<pre class="source">
+factory Address.fromJson(String json) {
+  return new _Address.fromJson(json);  
+}
+</pre>
+</div>
+</div>
 <div class="method inherited"><h4 id="hashCode">
 <button class="show-code">Code</button>
 <a href="http://api.dartlang.org/dart_core/int.html">int</a> <strong>hashCode</strong>() <a class="anchor-link" href="#hashCode"
@@ -233,6 +267,17 @@ const Object();
 </pre>
 </div>
 </div>
+<div class="method"><h4 id="toJson">
+<button class="show-code">Code</button>
+<a href="http://api.dartlang.org/dart_core/String.html">String</a> <strong>toJson</strong>() <a class="anchor-link" href="#toJson"
+              title="Permalink to Address.toJson">#</a></h4>
+<div class="doc">
+<p>Returns a representation of the address object as JSON</p>
+<pre class="source">
+String toJson();
+</pre>
+</div>
+</div>
 <div class="method"><h4 id="toString">
 <button class="show-code">Code</button>
 <a href="http://api.dartlang.org/dart_core/String.html">String</a> <strong>toString</strong>() <a class="anchor-link" href="#toString"
@@ -240,7 +285,7 @@ const Object();
 <div class="doc">
 <p>Returns a representation of the address object</p>
 <pre class="source">
-String toString() =&gt; "Address for $fullname";
+String toString();
 </pre>
 </div>
 </div>
@@ -250,7 +295,7 @@ String toString() =&gt; "Address for $fullname";
         </div>
         
         <div class="footer">
-          <div>This page was generated at 2012-10-14 21:59:23.996</div>
+          <div>This page was generated at 2012-10-14 22:35:49.329</div>
         </div>
         <script async src="../client-static.js"></script>
         </body></html>
