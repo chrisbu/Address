@@ -1,4 +1,5 @@
 name:  Address
 description:  A sample application
 dependencies:
-  logging: { sdk: logging }
+  unittest: { sdk: unittest }
+  

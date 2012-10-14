@@ -1,42 +1,29 @@
-library Address;
+library address;
 
-import 'dart:json';
-import 'package:logging/logging.dart';
+part 'src/address_impl.dart';
 
+/// Public [Address] abstract class which provides basic functionality
+/// to represent an address
 abstract class Address {
   String surname;
   String forename;
   String address1;
   String address2;
+  /// Returns the [fullname] which is an aggregate of the 
+  /// [forename] and the [surname] 
+  String get fullname;
 
-  get fullname => "$forename $surname";
+  /// Returns a representation of the address object
+  String toString() => "Address for $fullname"; 
   
+  /// Redirecting constructor to the default [Address] implementation
   factory Address() {
     return new _Address(); 
   }
-}
-
-class _Address implements Address {
-  var _surname = "";
-  String get surname => _surname;
-  set surname(String value) {
-    if (value == null) {
-       throw new Exception("null surname is not allowed");
-    }
-    _surname = value;
-  }
-  
-  String forename = "";
-  String address1;
-  String address2;
-
-  get fullname => "$forename $surname";
   
 }
 
-
-
-
-log(AddressBase address) {
-  new Logger("Address").log(Level.INFO, address);
+/// Outputs an [Address] to the console
+log(Address address) {
+  print(address.toString());
 }
