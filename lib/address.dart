@@ -1,5 +1,7 @@
 library address;
 
+import 'dart:json';
+
 part 'src/address_impl.dart';
 
 /// Public [Address] abstract class which provides basic functionality
@@ -14,7 +16,9 @@ abstract class Address {
   String get fullname;
 
   /// Returns a representation of the address object
-  String toString() => "Address for $fullname"; 
+  String toString(); 
+  
+  String toJson();
   
   /// Redirecting constructor to the default [Address] implementation
   factory Address() {

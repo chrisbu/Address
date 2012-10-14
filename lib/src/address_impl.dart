@@ -16,4 +16,15 @@ class _Address implements Address {
     _surname = value;
   }
   
+  toJson() {
+    var map = {};
+    map["surname"] = surname;
+    map["forename"] = forename;
+    map["address1"] = address1;
+    map["address2"] = address2;
+    return JSON.stringify(map);
+  }
+  
+  toString() => "Address of $fullname"; 
+  
 }
