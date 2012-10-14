@@ -17,7 +17,7 @@ abstract class AddressBase {
 }
 
 class Address implements AddressBase {
-  var _surname;
+  var _surname = "";
   String get surname => _surname;
   set surname(String value) {
     if (value == null) {
@@ -32,7 +32,6 @@ class Address implements AddressBase {
 
   get fullname => "$forename $surname";
   
-  Address(this.surname) {}
 }
 
 
