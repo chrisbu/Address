@@ -22,7 +22,7 @@ class _Address implements Address {
     map["forename"] = forename;
     map["address1"] = address1;
     map["address2"] = address2;
-    return JSON.stringify(map);
+    return map;
   }
   
   toString() => "Address of $fullname"; 
