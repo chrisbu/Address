@@ -3,7 +3,7 @@ library Address;
 import 'dart:json';
 import 'package:logging/logging.dart';
 
-abstract class AddressBase {
+abstract class Address {
   String surname;
   String forename;
   String address1;
@@ -11,12 +11,12 @@ abstract class AddressBase {
 
   get fullname => "$forename $surname";
   
-  factory AddressBase() {
-    return new Address(); 
+  factory Address() {
+    return new _Address(); 
   }
 }
 
-class Address implements AddressBase {
+class _Address implements Address {
   var _surname = "";
   String get surname => _surname;
   set surname(String value) {
