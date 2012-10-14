@@ -1,0 +1,257 @@
+        <!DOCTYPE html>
+        <html>
+        <head>
+                <meta charset="utf-8">
+        <title>Address abstract class / address Library / Dart Documentation</title>
+        <link rel="stylesheet" type="text/css"
+            href="../styles.css">
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" href="../favicon.ico">
+        
+        </head>
+        <body data-library="address" data-type="Address">
+        <div class="page">
+        <div class="header">
+          <a href="../index.html"><div class="logo"></div></a>
+          <a href="../index.html">Dart Documentation</a>
+         &rsaquo; <a href="../address.html">address</a> &rsaquo; <a href="../address/Address.html">Address</a>        <div id="search-box">
+          <input type="search" name="q" id="q" autocomplete="off"
+              class="search-input" placeholder="Search API">
+        </div>
+        
+      </div>
+      <div class="drop-down" id="drop-down"></div>
+      
+        <div class="nav">
+        
+<h2><div class="icon-library"></div><a href="../address.html">address</a></h2><ul class="icon">
+<li><div class="icon-class"></div><strong>Address</strong></li>
+</ul>
+</div>
+<div class="content">
+        <h2><strong>Address</strong>
+          abstract class
+        </h2>
+        
+<button id="show-inherited" class="show-inherited">Hide inherited</button>
+<div class="doc">
+<p>Public <a class="crossref" href="../address/Address.html#Address">Address</a> abstract class which provides basic functionalityto represent an address</p>
+<pre class="source">
+abstract class Address {
+  String surname;
+  String forename;
+  String address1;
+  String address2;
+  /// Returns the [fullname] which is an aggregate of the 
+  /// [forename] and the [surname] 
+  String get fullname;
+
+  /// Returns a representation of the address object
+  String toString() =&gt; "Address for $fullname"; 
+  
+  /// Redirecting constructor to the default [Address] implementation
+  factory Address() {
+    return new _Address(); 
+  }
+  
+}
+</pre>
+</div>
+<div>
+<h3>Constructors</h3>
+<div class="method"><h4 id="Address">
+<button class="show-code">Code</button>
+factory <strong>Address</strong>() <a class="anchor-link" href="#Address"
+              title="Permalink to Address.Address">#</a></h4>
+<div class="doc">
+<p>Redirecting constructor to the default <a class="crossref" href="../address/Address.html#Address">Address</a> implementation</p>
+<pre class="source">
+factory Address() {
+  return new _Address(); 
+}
+</pre>
+</div>
+</div>
+</div>
+<div>
+<h3>Properties</h3>
+<div class="field"><h4 id="address1">
+<button class="show-code">Code</button>
+<a href="http://api.dartlang.org/dart_core/String.html">String</a>         <strong>address1</strong> <a class="anchor-link"
+            href="#address1"
+            title="Permalink to Address.address1">#</a>
+        </h4>
+        <div class="doc">
+<pre class="source">
+String address1;
+</pre>
+</div>
+</div>
+<div class="field"><h4 id="address2">
+<button class="show-code">Code</button>
+<a href="http://api.dartlang.org/dart_core/String.html">String</a>         <strong>address2</strong> <a class="anchor-link"
+            href="#address2"
+            title="Permalink to Address.address2">#</a>
+        </h4>
+        <div class="doc">
+<pre class="source">
+String address2;
+</pre>
+</div>
+</div>
+<div class="field"><h4 id="forename">
+<button class="show-code">Code</button>
+<a href="http://api.dartlang.org/dart_core/String.html">String</a>         <strong>forename</strong> <a class="anchor-link"
+            href="#forename"
+            title="Permalink to Address.forename">#</a>
+        </h4>
+        <div class="doc">
+<pre class="source">
+String forename;
+</pre>
+</div>
+</div>
+<div class="field"><h4 id="fullname">
+<button class="show-code">Code</button>
+final <a href="http://api.dartlang.org/dart_core/String.html">String</a>         <strong>fullname</strong> <a class="anchor-link"
+            href="#fullname"
+            title="Permalink to Address.fullname">#</a>
+        </h4>
+        <div class="doc">
+<p>Returns the <a class="crossref" href="../address/Address.html#fullname">fullname</a> which is an aggregate of the <a class="crossref" href="../address/Address.html#forename">forename</a> and the <a class="crossref" href="../address/Address.html#surname">surname</a> </p>
+<pre class="source">
+String get fullname;
+</pre>
+</div>
+</div>
+<div class="field inherited"><h4 id="runtimeType">
+<button class="show-code">Code</button>
+final <a href="http://api.dartlang.org/dart_core/Type.html">Type</a>         <strong>runtimeType</strong> <a class="anchor-link"
+            href="#runtimeType"
+            title="Permalink to Address.runtimeType">#</a>
+        </h4>
+        <div class="inherited-from">inherited from <a href="http://api.dartlang.org/dart_core/Object.html">Object</a> </div><div class="doc">
+<p>A representation of the runtime type of the object.</p>
+<pre class="source">
+external Type get runtimeType;
+</pre>
+</div>
+</div>
+<div class="field"><h4 id="surname">
+<button class="show-code">Code</button>
+<a href="http://api.dartlang.org/dart_core/String.html">String</a>         <strong>surname</strong> <a class="anchor-link"
+            href="#surname"
+            title="Permalink to Address.surname">#</a>
+        </h4>
+        <div class="doc">
+<pre class="source">
+String surname;
+</pre>
+</div>
+</div>
+</div>
+<div>
+<h3>Operators</h3>
+<div class="method inherited"><h4 id="==">
+<button class="show-code">Code</button>
+<a href="http://api.dartlang.org/dart_core/bool.html">bool</a> <strong>operator ==</strong>(other) <a class="anchor-link" href="#=="
+              title="Permalink to Address.operator ==">#</a></h4>
+<div class="inherited-from">inherited from <a href="http://api.dartlang.org/dart_core/Object.html">Object</a> </div><div class="doc">
+<p>The equality operator.</p>
+<p>The default behavior for all <code>Object</code>s is to return true if and
+only if <code>this</code> and 
+<span class="param">other</span> are the same object.</p>
+<p>If a subclass overrides the equality operator it should override
+the <code>hashCode</code> method as well to maintain consistency.</p>
+<pre class="source">
+bool operator ==(other) =&gt; identical(this, other);
+</pre>
+</div>
+</div>
+</div>
+<div>
+<h3>Methods</h3>
+<div class="method"><h4 id="Address">
+<button class="show-code">Code</button>
+factory <strong>Address</strong>() <a class="anchor-link" href="#Address"
+              title="Permalink to Address.Address">#</a></h4>
+<div class="doc">
+<p>Redirecting constructor to the default <a class="crossref" href="../address/Address.html#Address">Address</a> implementation</p>
+<pre class="source">
+factory Address() {
+  return new _Address(); 
+}
+</pre>
+</div>
+</div>
+<div class="method inherited"><h4 id="hashCode">
+<button class="show-code">Code</button>
+<a href="http://api.dartlang.org/dart_core/int.html">int</a> <strong>hashCode</strong>() <a class="anchor-link" href="#hashCode"
+              title="Permalink to Address.hashCode">#</a></h4>
+<div class="inherited-from">inherited from <a href="http://api.dartlang.org/dart_core/Object.html">Object</a> </div><div class="doc">
+<p>Get a hash code for this object.</p>
+<p>All objects have hash codes. Hash codes are guaranteed to be the
+same for objects that are equal when compared using the equality
+operator <code>==</code>. Other than that there are no guarantees about
+the hash codes. They will not be consistent between runs and
+there are no distribution guarantees.</p>
+<p>If a subclass overrides <code>hashCode</code> it should override the
+equality operator as well to maintain consistency.</p>
+<pre class="source">
+external int hashCode();
+</pre>
+</div>
+</div>
+<div class="method inherited"><h4 id="noSuchMethod">
+<button class="show-code">Code</button>
+<strong>noSuchMethod</strong>(<a href="http://api.dartlang.org/dart_core/String.html">String</a> name, <a href="http://api.dartlang.org/dart_core/List.html">List</a> args) <a class="anchor-link" href="#noSuchMethod"
+              title="Permalink to Address.noSuchMethod">#</a></h4>
+<div class="inherited-from">inherited from <a href="http://api.dartlang.org/dart_core/Object.html">Object</a> </div><div class="doc">
+<p><code>noSuchMethod</code> is invoked when users invoke a non-existant method
+on an object. The name of the method and the arguments of the
+invocation are passed to <code>noSuchMethod</code>. If <code>noSuchMethod</code>
+returns a value, that value becomes the result of the original
+invocation.</p>
+<p>The default behavior of <code>noSuchMethod</code> is to throw a
+<code>noSuchMethodError</code>.</p>
+<pre class="source">
+external Dynamic noSuchMethod(String name, List args);
+</pre>
+</div>
+</div>
+<div class="method inherited"><h4 id="Object">
+<button class="show-code">Code</button>
+const <strong>Object</strong>() <a class="anchor-link" href="#Object"
+              title="Permalink to Address.Object">#</a></h4>
+<div class="inherited-from">inherited from <a href="http://api.dartlang.org/dart_core/Object.html">Object</a> </div><div class="doc">
+<p>Creates a new <code>Object</code> instance.</p>
+<p><code>Object</code> instances have no meaningful state, and are only useful
+through their identity. An <code>Object</code> instance is equal to itself
+only.</p>
+<pre class="source">
+const Object();
+</pre>
+</div>
+</div>
+<div class="method"><h4 id="toString">
+<button class="show-code">Code</button>
+<a href="http://api.dartlang.org/dart_core/String.html">String</a> <strong>toString</strong>() <a class="anchor-link" href="#toString"
+              title="Permalink to Address.toString">#</a></h4>
+<div class="doc">
+<p>Returns a representation of the address object</p>
+<pre class="source">
+String toString() =&gt; "Address for $fullname";
+</pre>
+</div>
+</div>
+</div>
+        </div>
+        <div class="clear"></div>
+        </div>
+        
+        <div class="footer">
+          <div>This page was generated at 2012-10-14 21:59:23.996</div>
+        </div>
+        <script async src="../client-static.js"></script>
+        </body></html>
+        
